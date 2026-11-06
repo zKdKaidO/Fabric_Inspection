@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "registered_targets": 6586,
+  "successfully_archived": 6586,
+  "unresolved": 0,
+  "archive": "A:\\RAW_FABRID\\_archive\\fabric_inspection_research_20261106",
+  "SHA256_all_match": true,
+  "source_paths_absent_immediately_after_move": true,
+  "protected_files_unchanged": 75,
+  "active_experiment_files": 0,
+  "empty_directories": "Retained; no directory deletion attempted",
+  "original_backup_untouched": true,
+  "deletions": 0,
+  "copies": 0,
+  "overwrites": 0,
+  "seconds": 108.34271080000008
+}

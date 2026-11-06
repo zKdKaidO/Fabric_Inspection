@@ -1,0 +1,95 @@
+name: Solution 1 - Center-Surround Classical CV
+frozen_on: '2026-11-03'
+migrated_on: '2026-11-06'
+model_sha256: 85c2b9102a4d38aade01ec84595eb9d1db1360e700ed359f9ac3ac7ccae9d81e
+source_fit_config_sha256: 31fd62cc5de5f0053388c991d63b8801dd65a746b428cb6d142417770d0a177d
+seed: 42
+dataset:
+  root: ../MVTec
+  metadata_csv: ../RAW_FABRID_Patches_Metadata.csv
+  coco_json: ../RAW_FABRID_Patches_COCO.json
+  image_size: 256
+  images: ../images
+preprocessing:
+  lower_percentile: 5.0
+  upper_percentile: 95.0
+gabor:
+  wavelengths:
+  - 4.0
+  - 6.0
+  - 8.0
+  orientations_deg:
+  - 0.0
+  - 45.0
+  - 90.0
+  - 135.0
+  sigma_ratio: 0.56
+  gamma: 0.5
+  phases_rad:
+  - 0.0
+  - 1.5707963267948966
+features:
+  local_window: 15
+  stride: 4
+  include_energy: true
+  include_dispersion: true
+  map_gaussian_sigma: 1.5
+  map_clip: 25.0
+center_surround:
+  center_width: 15
+  outer_width: 25
+  median: lower
+  halo: 20
+  sample_offset: 2
+  dimensions: 25
+fit:
+  validation_parent_fraction: 0.2
+  max_patches_per_parent: 4
+  sampled_locations_per_patch: 64
+  max_pca_samples_per_roll: 20000
+  pca_explained_variance: 0.95
+  robust_epsilon: 1.0e-06
+image_score_quantile: 0.999
+pca_ranks:
+  Rollo1A: 19
+  Rollo2A: 19
+  Rollo3A: 19
+  Rollo4A: 19
+  Rollo5A: 19
+  Rollo6A: 19
+  Rollo7A: 18
+operating_policy:
+  Rollo1A:
+    review: 9.078299560546876
+    hold: 10.313648136138916
+    pixel: 4.248610496520996
+  Rollo2A:
+    review: 7.7844077444076545
+    hold: 8.340308362960814
+    pixel: 3.88421630859375
+  Rollo3A:
+    review: 9.288993444442756
+    hold: 12.152696951866156
+    pixel: 4.173697471618652
+  Rollo4A:
+    review: 8.168771677017205
+    hold: 8.783743891716016
+    pixel: 3.9518651962280273
+  Rollo5A:
+    review: 7.477223720550538
+    hold: 7.593704816818237
+    pixel: 3.863859176635742
+  Rollo6A:
+    review: 8.083362960815421
+    hold: 9.08831785488129
+    pixel: 4.089235305786133
+  Rollo7A:
+    review: 8.78067584991455
+    hold: 10.290146230697626
+    pixel: 5.331718444824219
+commissioning: validate_normal_samples_and_activate_frozen_profile_no_refit
+frame_assembly:
+  tile_size: 256
+  overlap: 32
+  merge: arithmetic_mean
+  benchmark_scope: 256x256 tile with real parent context

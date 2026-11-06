@@ -1,0 +1,125 @@
+{
+  "passed": true,
+  "original_inspection_rows_preserved": 2,
+  "original_review_rows_preserved": 0,
+  "fresh_smoke_inspections_added": 4,
+  "old_rows_unchanged": true,
+  "registered_research_F_files_returned": 0,
+  "regenerated_G_output_files": [
+    {
+      "relative_path": ".pytest_cache/v/cache/nodeids",
+      "classification": "Fresh test/build/runtime output generated after verified move",
+      "original_archived_sha256": "1a113b85c45931319c2206ac4c3b1a55845b5343f89fb013b339836fa4bf9108",
+      "new_output_sha256": "b22040e1e9fb8ae8f3cdf69ab36ef2885f7059ae350b9bfc06c78cb92408cd2f"
+    },
+    {
+      "relative_path": "frontend/dist/favicon.svg",
+      "classification": "Fresh test/build/runtime output generated after verified move",
+      "original_archived_sha256": "9f2191f2b7a0693d56e0e8ce6e39630442247ba071a2758e32658dda0ddb5039",
+      "new_output_sha256": "9f2191f2b7a0693d56e0e8ce6e39630442247ba071a2758e32658dda0ddb5039"
+    },
+    {
+      "relative_path": "frontend/dist/index.html",
+      "classification": "Fresh test/build/runtime output generated after verified move",
+      "original_archived_sha256": "94bd2d915af447bb8c840cf0f64297a06ef2fce4810820e08c53c06090a2655b",
+      "new_output_sha256": "d1227ae05bd4221e14e4062691297334c106ef0b683fa442f35425bfcff3ae10"
+    },
+    {
+      "relative_path": "src/fabric_inspection/__pycache__/__init__.cpython-312.pyc",
+      "classification": "Fresh test/build/runtime output generated after verified move",
+      "original_archived_sha256": "d0c76d47ccdb549a8c3e807cf72d69aa41b220e373bbf24ae44386ae27d109e8",
+      "new_output_sha256": "d0c76d47ccdb549a8c3e807cf72d69aa41b220e373bbf24ae44386ae27d109e8"
+    },
+    {
+      "relative_path": "src/fabric_inspection/data/__pycache__/__init__.cpython-312.pyc",
+      "classification": "Fresh test/build/runtime output generated after verified move",
+      "original_archived_sha256": "052f96e67720f122a29d959dc9439e6c4f51fc7b8cc7625f008f2721ed5ee000",
+      "new_output_sha256": "57cfed282462155bc34b3bae8886e55f1e293a0cfcd9f00fe590328b9ba43ba6"
+    },
+    {
+      "relative_path": "src/fabric_inspection/data/__pycache__/raw_fabrid.cpython-312.pyc",
+      "classification": "Fresh test/build/runtime output generated after verified move",
+      "original_archived_sha256": "1e3ab982f0a59a8b777768610d148a47b48817c07ad56ba7265f2d99a1db60de",
+      "new_output_sha256": "b030152cc07324a83f709042cf42cfebb230df4678763dd08b7f60b40de35164"
+    },
+    {
+      "relative_path": "src/fabric_inspection/product/__pycache__/__init__.cpython-312.pyc",
+      "classification": "Fresh test/build/runtime output generated after verified move",
+      "original_archived_sha256": "088ac1b60eb945ff919a961b5cf7795baee6a22654a7a54b2337c6444b24fa73",
+      "new_output_sha256": "85fc8bd71c00883139f119629785c4735e8a8b79d5a9e265a86ffeb6f0c90126"
+    },
+    {
+      "relative_path": "src/fabric_inspection/product/__pycache__/api.cpython-312.pyc",
+      "classification": "Fresh test/build/runtime output generated after verified move",
+      "original_archived_sha256": "e6ed716d271d44a258bd0157716ada27f4af24ea1427f338d521b6678eab4f85",
+      "new_output_sha256": "e6ed716d271d44a258bd0157716ada27f4af24ea1427f338d521b6678eab4f85"
+    },
+    {
+      "relative_path": "src/fabric_inspection/product/__pycache__/commissioning.cpython-312.pyc",
+      "classification": "Fresh test/build/runtime output generated after verified move",
+      "original_archived_sha256": "fbd5621ce4cb5f6f3eaf8551ec6ec3a9e36242f4d5cd9ba44bb5f3023e8c1222",
+      "new_output_sha256": "fbd5621ce4cb5f6f3eaf8551ec6ec3a9e36242f4d5cd9ba44bb5f3023e8c1222"
+    },
+    {
+      "relative_path": "src/fabric_inspection/product/__pycache__/database.cpython-312.pyc",
+      "classification": "Fresh test/build/runtime output generated after verified move",
+      "original_archived_sha256": "b7b9923e0ba2d2b7ad39233f546e112e60d30d3fe26834e1cd2721f34c707ff0",
+      "new_output_sha256": "b7b9923e0ba2d2b7ad39233f546e112e60d30d3fe26834e1cd2721f34c707ff0"
+    },
+    {
+      "relative_path": "src/fabric_inspection/product/__pycache__/service.cpython-312.pyc",
+      "classification": "Fresh test/build/runtime output generated after verified move",
+      "original_archived_sha256": "c23e86e81f4a621bf1ceab02b3035aaede3922b6596ed1b8a14e158d0f00096b",
+      "new_output_sha256": "c23e86e81f4a621bf1ceab02b3035aaede3922b6596ed1b8a14e158d0f00096b"
+    },
+    {
+      "relative_path": "src/fabric_inspection/vision/__pycache__/__init__.cpython-312.pyc",
+      "classification": "Fresh test/build/runtime output generated after verified move",
+      "original_archived_sha256": "887c87319939e83da4d3b238cb38e00a99ace1da0b936ded3fb89a9040b96382",
+      "new_output_sha256": "e5f8d47629194675fe3e02396550328304f9354db2f1b4a992b563e5b1e7b74d"
+    },
+    {
+      "relative_path": "src/fabric_inspection/vision/classical/__pycache__/__init__.cpython-312.pyc",
+      "classification": "Fresh test/build/runtime output generated after verified move",
+      "original_archived_sha256": "e2687fdcf91e56f13cd18b4d771756648150f6ac13eaf497783c3e9cb5079aa4",
+      "new_output_sha256": "e2687fdcf91e56f13cd18b4d771756648150f6ac13eaf497783c3e9cb5079aa4"
+    },
+    {
+      "relative_path": "src/fabric_inspection/vision/classical/__pycache__/engine.cpython-312.pyc",
+      "classification": "Fresh test/build/runtime output generated after verified move",
+      "original_archived_sha256": "8e4bd95ec686834ef59502c05f1c58d9954c2498a937eb4bcdf7a1e3aee0c361",
+      "new_output_sha256": "8e4bd95ec686834ef59502c05f1c58d9954c2498a937eb4bcdf7a1e3aee0c361"
+    },
+    {
+      "relative_path": "src/fabric_inspection/vision/classical/__pycache__/gabor.cpython-312.pyc",
+      "classification": "Fresh test/build/runtime output generated after verified move",
+      "original_archived_sha256": "e75cb75a1fd2e02411233a12f513c320f275782cf84749773e1bd0f17f5f7b96",
+      "new_output_sha256": "5c47066fcf2a61ac54abb0b84b87a644c2b1f365896201a15fb048eae5650107"
+    },
+    {
+      "relative_path": "src/fabric_inspection/vision/classical/__pycache__/normal_model.cpython-312.pyc",
+      "classification": "Fresh test/build/runtime output generated after verified move",
+      "original_archived_sha256": "1d31c8440a7eeac5094363ac7a4cafcfc1c6f79f0d5a4230d8195f00360a07f5",
+      "new_output_sha256": "1d31c8440a7eeac5094363ac7a4cafcfc1c6f79f0d5a4230d8195f00360a07f5"
+    },
+    {
+      "relative_path": "src/fabric_inspection/vision/classical/__pycache__/preprocessing.cpython-312.pyc",
+      "classification": "Fresh test/build/runtime output generated after verified move",
+      "original_archived_sha256": "6431670c53b3a656d082c5f12fd7233ddc5539806e93d40a85d1e9c01f29148e",
+      "new_output_sha256": "1c9d7b617975d423400f9e31b8c3d8903e57844f919935aa124a7194188305a3"
+    },
+    {
+      "relative_path": "src/fabric_inspection/vision/classical/__pycache__/scoring.cpython-312.pyc",
+      "classification": "Fresh test/build/runtime output generated after verified move",
+      "original_archived_sha256": "d703734f9be6427918a1aae05d934e12ea0b52e6a8a5156d7259a332668bafb0",
+      "new_output_sha256": "d703734f9be6427918a1aae05d934e12ea0b52e6a8a5156d7259a332668bafb0"
+    },
+    {
+      "relative_path": "src/fabric_inspection/vision/classical/__pycache__/texture_features.cpython-312.pyc",
+      "classification": "Fresh test/build/runtime output generated after verified move",
+      "original_archived_sha256": "67a6f7bce40b5d49d623e1b8169dcedf9eb31672ab7daa4c5540483df520262a",
+      "new_output_sha256": "67a6f7bce40b5d49d623e1b8169dcedf9eb31672ab7daa4c5540483df520262a"
+    }
+  ],
+  "archive_integrity_receipt": "cleanup_archive_verification.json"
+}

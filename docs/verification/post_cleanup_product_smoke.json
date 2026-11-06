@@ -1,0 +1,120 @@
+{
+  "started_after_quarantine": true,
+  "startup_command": ".\\scripts\\start_product.ps1",
+  "profile_policy": "Frozen Solution 1 with seven roll-specific normal reference profiles",
+  "model_fitting_supported": false,
+  "commissioning_success": {
+    "fabric_id": "archive-pass-ad7c65a4",
+    "profile": "Rollo1A",
+    "summary": {
+      "profile": "Rollo1A",
+      "number_of_samples": 4,
+      "score_distribution": [
+        2.6745481491088867,
+        3.8842649459838867,
+        4.8920440673828125,
+        4.340704441070557
+      ],
+      "validation_passed": true,
+      "validation_rule": "Every normal sample score must remain below the unchanged review threshold",
+      "model_artifact_path": "A:\\RAW_FABRID\\fabric_inspection\\models\\classical_solution1.joblib",
+      "model_sha256": "85c2b9102a4d38aade01ec84595eb9d1db1360e700ed359f9ac3ac7ccae9d81e",
+      "thresholds": {
+        "pass": 9.078299560546876,
+        "review": 9.078299560546876,
+        "fail": 10.313648136138916,
+        "pixel": 4.248610496520996
+      },
+      "fail_enabled": true,
+      "pca_components": 19,
+      "pca_explained_variance": 0.9562633037567139,
+      "commissioning_time_seconds": 0.449363700000049,
+      "normal_only": true,
+      "refitted": false,
+      "message": "Selected frozen profile activated."
+    },
+    "active": true
+  },
+  "catalog_inspection": {
+    "inspection_id": "e9f5f1c3f33f43c8aa1a4a7412990402",
+    "score": 3.740664482116699,
+    "status": "PASS",
+    "evidence_HTTP": {
+      "original": 200,
+      "anomaly_map": 200,
+      "overlay": 200,
+      "raw_map": 200
+    },
+    "history": true,
+    "detail": true
+  },
+  "full_parent_upload": {
+    "inspection_id": "c0e24cac2dc649f3a2a2aba8c47555de",
+    "score": 4.147634983062744,
+    "status": "PASS",
+    "map_shape": [
+      1024,
+      1792
+    ],
+    "evidence_saved": true
+  },
+  "commissioning_failure": {
+    "fabric_id": "archive-fail-ad7c65a4",
+    "status": "VALIDATION_FAILED",
+    "summary": {
+      "profile": "Rollo1A",
+      "number_of_samples": 4,
+      "score_distribution": [
+        15.492402076721191,
+        15.492402076721191,
+        15.492402076721191,
+        15.492402076721191
+      ],
+      "validation_passed": false,
+      "validation_rule": "Every normal sample score must remain below the unchanged review threshold",
+      "model_artifact_path": "A:\\RAW_FABRID\\fabric_inspection\\models\\classical_solution1.joblib",
+      "model_sha256": "85c2b9102a4d38aade01ec84595eb9d1db1360e700ed359f9ac3ac7ccae9d81e",
+      "thresholds": {
+        "pass": 9.078299560546876,
+        "review": 9.078299560546876,
+        "fail": 10.313648136138916,
+        "pixel": 4.248610496520996
+      },
+      "fail_enabled": true,
+      "pca_components": 19,
+      "pca_explained_variance": 0.9562633037567139,
+      "commissioning_time_seconds": 0.2982591999998476,
+      "normal_only": true,
+      "refitted": false,
+      "message": "Normal validation failed. Profile not activated; select the correct fabric profile."
+    },
+    "active": false,
+    "inspection_rejected_HTTP": 400,
+    "fixture": "Fixed known defective image intentionally submitted as normal; not training or threshold tuning"
+  },
+  "unseen_fabric": {
+    "HTTP": 422,
+    "unsupported_message": true,
+    "fallback_profile": false
+  },
+  "passed": true,
+  "model_config_hashes_before": {
+    "classical_solution1.joblib": "85c2b9102a4d38aade01ec84595eb9d1db1360e700ed359f9ac3ac7ccae9d81e",
+    "classical_solution1.yaml": "90c1c9e0494df987675f6f8622ee6fb9c005e91d5461a89fcc7152e94733dca0"
+  },
+  "model_config_hashes_after": {
+    "classical_solution1.joblib": "85c2b9102a4d38aade01ec84595eb9d1db1360e700ed359f9ac3ac7ccae9d81e",
+    "classical_solution1.yaml": "90c1c9e0494df987675f6f8622ee6fb9c005e91d5461a89fcc7152e94733dca0"
+  },
+  "frontend_HTTP": 200,
+  "frontend_API_proxy_HTTP": 200,
+  "refitting": false,
+  "real_HOLD_inspection": {
+    "inspection_id": "55bdf1da027e42f3a56e8fcc00bae207",
+    "score": 15.492402076721191,
+    "status": "HOLD",
+    "explanation": "Strong anomalous evidence detected. Human confirmation required.",
+    "no_automatic_confirmation": true,
+    "history_and_evidence": true
+  }
+}

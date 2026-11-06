@@ -1,0 +1,49 @@
+Frozen regression 250/5656; native exact 250; stored exact 250; score error 0
+Frozen regression 500/5656; native exact 500; stored exact 500; score error 0
+Frozen regression 750/5656; native exact 750; stored exact 750; score error 0
+Frozen regression 1000/5656; native exact 1000; stored exact 1000; score error 0
+Frozen regression 1250/5656; native exact 1250; stored exact 1250; score error 0
+Frozen regression 1500/5656; native exact 1500; stored exact 1500; score error 0
+Frozen regression 1750/5656; native exact 1749; stored exact 1750; score error 0
+Frozen regression 2000/5656; native exact 1998; stored exact 2000; score error 0
+Frozen regression 2250/5656; native exact 2248; stored exact 2250; score error 0
+Frozen regression 2500/5656; native exact 2497; stored exact 2500; score error 0
+Frozen regression 2750/5656; native exact 2746; stored exact 2750; score error 0
+Frozen regression 3000/5656; native exact 2994; stored exact 3000; score error 0
+Frozen regression 3250/5656; native exact 3243; stored exact 3250; score error 0
+Frozen regression 3500/5656; native exact 3492; stored exact 3500; score error 0
+Frozen regression 3750/5656; native exact 3739; stored exact 3750; score error 0
+Frozen regression 4000/5656; native exact 3988; stored exact 4000; score error 0
+Frozen regression 4250/5656; native exact 4236; stored exact 4250; score error 0
+Frozen regression 4500/5656; native exact 4485; stored exact 4500; score error 0
+Frozen regression 4750/5656; native exact 4735; stored exact 4750; score error 0
+Frozen regression 5000/5656; native exact 4985; stored exact 5000; score error 0
+Frozen regression 5250/5656; native exact 5234; stored exact 5250; score error 0
+Frozen regression 5500/5656; native exact 5483; stored exact 5500; score error 0
+{
+  "passed": true,
+  "images": 5656,
+  "native_maps_bit_exact": 5639,
+  "stored_maps_bit_exact": 5656,
+  "native_map_max_abs_error": 1.1920928955078125e-06,
+  "native_score_max_abs_error": 0.0,
+  "maximum_metric_abs_error": 0.0,
+  "operating": {
+    "TP": 240,
+    "FP": 26,
+    "recall": 0.34934497816593885,
+    "precision": 0.9022556390977443,
+    "normal_FPR": 0.0052324411350372305
+  },
+  "hashes_before": {
+    "classical_solution1.joblib": "85c2b9102a4d38aade01ec84595eb9d1db1360e700ed359f9ac3ac7ccae9d81e",
+    "classical_solution1.yaml": "90c1c9e0494df987675f6f8622ee6fb9c005e91d5461a89fcc7152e94733dca0"
+  },
+  "hashes_after": {
+    "classical_solution1.joblib": "85c2b9102a4d38aade01ec84595eb9d1db1360e700ed359f9ac3ac7ccae9d81e",
+    "classical_solution1.yaml": "90c1c9e0494df987675f6f8622ee6fb9c005e91d5461a89fcc7152e94733dca0"
+  },
+  "no_refit": true,
+  "seconds": 483.9562349,
+  "map_reference_supplied": true
+}

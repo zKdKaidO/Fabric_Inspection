@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "generated_JS_matches_retained_TS_tokens_ignoring_format_and_optional_semicolons": true,
+  "retained_build_configuration": "vite.config.ts",
+  "generated_declaration_not_in_app_include": true,
+  "buildinfo_not_required": true,
+  "no_final_source_import_of_registered_artifacts": true,
+  "retained_public_favicon": true,
+  "dist_status": "Generated previous deployment output; new build required after archive",
+  "source_files_checked": [
+    "src\\App.tsx",
+    "src\\main.tsx",
+    "src\\styles.css",
+    "src\\vite-env.d.ts"
+  ]
+}

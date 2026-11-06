@@ -1,0 +1,43 @@
+{
+  "passed": true,
+  "fabric": "final-demo-Rollo1A",
+  "profile": "Rollo1A",
+  "commissioning_summary": {
+    "profile": "Rollo1A",
+    "number_of_samples": 4,
+    "score_distribution": [
+      2.6745481491088867,
+      3.8842649459838867,
+      4.8920440673828125,
+      4.340704441070557
+    ],
+    "validation_passed": true,
+    "validation_rule": "Every normal sample score must remain below the unchanged review threshold",
+    "model_artifact_path": "A:\\RAW_FABRID\\fabric_inspection\\models\\classical_solution1.joblib",
+    "model_sha256": "85c2b9102a4d38aade01ec84595eb9d1db1360e700ed359f9ac3ac7ccae9d81e",
+    "thresholds": {
+      "pass": 9.078299560546876,
+      "review": 9.078299560546876,
+      "fail": 10.313648136138916,
+      "pixel": 4.248610496520996
+    },
+    "fail_enabled": true,
+    "pca_components": 19,
+    "pca_explained_variance": 0.9562633037567139,
+    "commissioning_time_seconds": 0.9558587999999872,
+    "normal_only": true,
+    "refitted": false,
+    "message": "Selected frozen profile activated."
+  },
+  "inspection_id": "fba19553b9cd494ba5a11b673ba9aa35",
+  "image_score": 3.740664482116699,
+  "decision": "PASS",
+  "history": true,
+  "artifact_HTTP": {
+    "original": 200,
+    "anomaly_map": 200,
+    "overlay": 200,
+    "raw_map": 200
+  },
+  "ground_truth_was_not_passed": true
+}

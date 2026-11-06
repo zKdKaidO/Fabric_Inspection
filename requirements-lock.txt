@@ -1,0 +1,15 @@
+# Versions used for the verified frozen regression, 6 November 2026.
+numpy==2.5.2
+opencv-python-headless==5.0.0.93
+pandas==3.0.6
+Pillow==12.3.0
+PyYAML==6.0.3
+scikit-learn==1.9.1
+scipy==1.18.1
+joblib==1.6.0
+fastapi==0.141.1
+uvicorn==0.54.0
+python-multipart==0.0.32
+httpx==0.28.1
+threadpoolctl==3.7.0
+pytest==9.1.1

@@ -1,0 +1,13 @@
+{
+  "plan_sha256": "94009997091b1f4a67b992ef8ebc83791df6d80570a559d339aa5ddcb4023cd4",
+  "registered_total": 6586,
+  "remaining_files": 6586,
+  "already_absent": 0,
+  "allowed_categories": {
+    "G": 136,
+    "F": 6450
+  },
+  "outside_project": 0,
+  "protected_targets": 0,
+  "model_config_hashes_match": true
+}

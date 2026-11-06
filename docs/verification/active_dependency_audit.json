@@ -1,0 +1,140 @@
+{
+  "passed": true,
+  "scope": "Active final product dependency closure; unrelated files still awaiting registered cleanup",
+  "entry_points": [
+    "fabric_inspection",
+    "fabric_inspection.product.api",
+    "fabric_inspection.vision.classical.engine",
+    "fabric_inspection.vision.classical.normal_model"
+  ],
+  "modules": {
+    "fabric_inspection.vision.classical.normal_model": "src/fabric_inspection/vision/classical/normal_model.py",
+    "fabric_inspection": "src/fabric_inspection/__init__.py",
+    "fabric_inspection.vision": "src/fabric_inspection/vision/__init__.py",
+    "fabric_inspection.vision.classical": "src/fabric_inspection/vision/classical/__init__.py",
+    "fabric_inspection.vision.classical.engine": "src/fabric_inspection/vision/classical/engine.py",
+    "fabric_inspection.vision.classical.scoring": "src/fabric_inspection/vision/classical/scoring.py",
+    "fabric_inspection.vision.classical.center_surround": "src/fabric_inspection/vision/classical/center_surround.py",
+    "fabric_inspection.vision.classical.texture_features": "src/fabric_inspection/vision/classical/texture_features.py",
+    "fabric_inspection.vision.classical.gabor": "src/fabric_inspection/vision/classical/gabor.py",
+    "fabric_inspection.vision.classical.preprocessing": "src/fabric_inspection/vision/classical/preprocessing.py",
+    "fabric_inspection.product.api": "src/fabric_inspection/product/api.py",
+    "fabric_inspection.product.catalog": "src/fabric_inspection/product/catalog.py",
+    "fabric_inspection.data.raw_fabrid": "src/fabric_inspection/data/raw_fabrid.py",
+    "fabric_inspection.data": "src/fabric_inspection/data/__init__.py",
+    "fabric_inspection.product": "src/fabric_inspection/product/__init__.py",
+    "fabric_inspection.product.service": "src/fabric_inspection/product/service.py",
+    "fabric_inspection.product.evidence": "src/fabric_inspection/product/evidence.py",
+    "fabric_inspection.product.decision": "src/fabric_inspection/product/decision.py",
+    "fabric_inspection.product.commissioning": "src/fabric_inspection/product/commissioning.py",
+    "fabric_inspection.product.database": "src/fabric_inspection/product/database.py"
+  },
+  "internal_edges": [
+    [
+      "fabric_inspection.vision.classical",
+      "fabric_inspection.vision.classical.engine"
+    ],
+    [
+      "fabric_inspection.vision.classical.engine",
+      "fabric_inspection.vision.classical.preprocessing"
+    ],
+    [
+      "fabric_inspection.vision.classical.engine",
+      "fabric_inspection.vision.classical.gabor"
+    ],
+    [
+      "fabric_inspection.vision.classical.engine",
+      "fabric_inspection.vision.classical.texture_features"
+    ],
+    [
+      "fabric_inspection.vision.classical.engine",
+      "fabric_inspection.vision.classical.center_surround"
+    ],
+    [
+      "fabric_inspection.vision.classical.engine",
+      "fabric_inspection.vision.classical.scoring"
+    ],
+    [
+      "fabric_inspection.vision.classical.texture_features",
+      "fabric_inspection.vision.classical.gabor"
+    ],
+    [
+      "fabric_inspection.product.api",
+      "fabric_inspection.product.database"
+    ],
+    [
+      "fabric_inspection.product.api",
+      "fabric_inspection.product.service"
+    ],
+    [
+      "fabric_inspection.product.api",
+      "fabric_inspection.product.catalog"
+    ],
+    [
+      "fabric_inspection.product.api",
+      "fabric_inspection.vision.classical.engine"
+    ],
+    [
+      "fabric_inspection.product.catalog",
+      "fabric_inspection.data.raw_fabrid"
+    ],
+    [
+      "fabric_inspection.product.catalog",
+      "fabric_inspection.vision.classical.engine"
+    ],
+    [
+      "fabric_inspection.data",
+      "fabric_inspection.data.raw_fabrid"
+    ],
+    [
+      "fabric_inspection.product",
+      "fabric_inspection.product.database"
+    ],
+    [
+      "fabric_inspection.product",
+      "fabric_inspection.product.service"
+    ],
+    [
+      "fabric_inspection.product.service",
+      "fabric_inspection.vision.classical.engine"
+    ],
+    [
+      "fabric_inspection.product.service",
+      "fabric_inspection.vision.classical.preprocessing"
+    ],
+    [
+      "fabric_inspection.product.service",
+      "fabric_inspection.product.commissioning"
+    ],
+    [
+      "fabric_inspection.product.service",
+      "fabric_inspection.product.decision"
+    ],
+    [
+      "fabric_inspection.product.service",
+      "fabric_inspection.product.evidence"
+    ],
+    [
+      "fabric_inspection.product.commissioning",
+      "fabric_inspection.vision.classical.engine"
+    ],
+    [
+      "fabric_inspection.product.commissioning",
+      "fabric_inspection.vision.classical.preprocessing"
+    ]
+  ],
+  "forbidden_active_dependencies": [],
+  "model_sha256": "85c2b9102a4d38aade01ec84595eb9d1db1360e700ed359f9ac3ac7ccae9d81e",
+  "config_sha256": "90c1c9e0494df987675f6f8622ee6fb9c005e91d5461a89fcc7152e94733dca0",
+  "profiles": [
+    "Rollo1A",
+    "Rollo2A",
+    "Rollo3A",
+    "Rollo4A",
+    "Rollo5A",
+    "Rollo6A",
+    "Rollo7A"
+  ],
+  "runtime_final_model_load": true,
+  "cleanup_complete": false
+}

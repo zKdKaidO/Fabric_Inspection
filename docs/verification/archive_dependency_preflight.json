@@ -1,0 +1,560 @@
+{
+  "passed": true,
+  "retained_Python_files": 29,
+  "imports": [
+    {
+      "file": "src/fabric_inspection/data/raw_fabrid.py",
+      "import": "from __future__ import annotations"
+    },
+    {
+      "file": "src/fabric_inspection/data/raw_fabrid.py",
+      "import": "import json"
+    },
+    {
+      "file": "src/fabric_inspection/data/raw_fabrid.py",
+      "import": "import re"
+    },
+    {
+      "file": "src/fabric_inspection/data/raw_fabrid.py",
+      "import": "from dataclasses import dataclass"
+    },
+    {
+      "file": "src/fabric_inspection/data/raw_fabrid.py",
+      "import": "from pathlib import Path"
+    },
+    {
+      "file": "src/fabric_inspection/data/raw_fabrid.py",
+      "import": "from typing import Iterable"
+    },
+    {
+      "file": "src/fabric_inspection/data/raw_fabrid.py",
+      "import": "import numpy as np"
+    },
+    {
+      "file": "src/fabric_inspection/data/raw_fabrid.py",
+      "import": "import pandas as pd"
+    },
+    {
+      "file": "src/fabric_inspection/data/raw_fabrid.py",
+      "import": "from PIL import Image"
+    },
+    {
+      "file": "src/fabric_inspection/data/__init__.py",
+      "import": "from .raw_fabrid import RawFabridDataset, RawFabridRecord"
+    },
+    {
+      "file": "src/fabric_inspection/evaluation/metrics.py",
+      "import": "from __future__ import annotations"
+    },
+    {
+      "file": "src/fabric_inspection/evaluation/metrics.py",
+      "import": "import cv2"
+    },
+    {
+      "file": "src/fabric_inspection/evaluation/metrics.py",
+      "import": "import numpy as np"
+    },
+    {
+      "file": "src/fabric_inspection/evaluation/metrics.py",
+      "import": "from sklearn.metrics import average_precision_score, roc_auc_score"
+    },
+    {
+      "file": "src/fabric_inspection/product/api.py",
+      "import": "from pathlib import Path"
+    },
+    {
+      "file": "src/fabric_inspection/product/api.py",
+      "import": "from typing import Literal"
+    },
+    {
+      "file": "src/fabric_inspection/product/api.py",
+      "import": "import sqlite3"
+    },
+    {
+      "file": "src/fabric_inspection/product/api.py",
+      "import": "import uvicorn"
+    },
+    {
+      "file": "src/fabric_inspection/product/api.py",
+      "import": "from fastapi import FastAPI, HTTPException, UploadFile, File, Form, Query"
+    },
+    {
+      "file": "src/fabric_inspection/product/api.py",
+      "import": "from fastapi.staticfiles import StaticFiles"
+    },
+    {
+      "file": "src/fabric_inspection/product/api.py",
+      "import": "from fastapi.middleware.cors import CORSMiddleware"
+    },
+    {
+      "file": "src/fabric_inspection/product/api.py",
+      "import": "from pydantic import BaseModel, Field, ConfigDict, field_validator"
+    },
+    {
+      "file": "src/fabric_inspection/product/api.py",
+      "import": "from .database import ProductDatabase"
+    },
+    {
+      "file": "src/fabric_inspection/product/api.py",
+      "import": "from .service import ProductService"
+    },
+    {
+      "file": "src/fabric_inspection/product/api.py",
+      "import": "from .catalog import DemoCatalog"
+    },
+    {
+      "file": "src/fabric_inspection/product/api.py",
+      "import": "from ..vision.classical.engine import ClassicalInspectionEngine, PROJECT_ROOT"
+    },
+    {
+      "file": "src/fabric_inspection/product/catalog.py",
+      "import": "from pathlib import Path"
+    },
+    {
+      "file": "src/fabric_inspection/product/catalog.py",
+      "import": "from ..data.raw_fabrid import RawFabridDataset"
+    },
+    {
+      "file": "src/fabric_inspection/product/catalog.py",
+      "import": "from ..vision.classical.engine import PROJECT_ROOT"
+    },
+    {
+      "file": "src/fabric_inspection/product/commissioning.py",
+      "import": "from pathlib import Path"
+    },
+    {
+      "file": "src/fabric_inspection/product/commissioning.py",
+      "import": "import time"
+    },
+    {
+      "file": "src/fabric_inspection/product/commissioning.py",
+      "import": "import numpy as np"
+    },
+    {
+      "file": "src/fabric_inspection/product/commissioning.py",
+      "import": "from PIL import Image"
+    },
+    {
+      "file": "src/fabric_inspection/product/commissioning.py",
+      "import": "from ..vision.classical.engine import ClassicalInspectionEngine"
+    },
+    {
+      "file": "src/fabric_inspection/product/commissioning.py",
+      "import": "from ..vision.classical.preprocessing import load_grayscale"
+    },
+    {
+      "file": "src/fabric_inspection/product/database.py",
+      "import": "from __future__ import annotations"
+    },
+    {
+      "file": "src/fabric_inspection/product/database.py",
+      "import": "import json"
+    },
+    {
+      "file": "src/fabric_inspection/product/database.py",
+      "import": "import sqlite3"
+    },
+    {
+      "file": "src/fabric_inspection/product/database.py",
+      "import": "from contextlib import contextmanager"
+    },
+    {
+      "file": "src/fabric_inspection/product/database.py",
+      "import": "from datetime import UTC, datetime"
+    },
+    {
+      "file": "src/fabric_inspection/product/database.py",
+      "import": "from pathlib import Path"
+    },
+    {
+      "file": "src/fabric_inspection/product/database.py",
+      "import": "from typing import Any, Iterator"
+    },
+    {
+      "file": "src/fabric_inspection/product/decision.py",
+      "import": "import math"
+    },
+    {
+      "file": "src/fabric_inspection/product/evidence.py",
+      "import": "from pathlib import Path"
+    },
+    {
+      "file": "src/fabric_inspection/product/evidence.py",
+      "import": "import cv2"
+    },
+    {
+      "file": "src/fabric_inspection/product/evidence.py",
+      "import": "import numpy as np"
+    },
+    {
+      "file": "src/fabric_inspection/product/evidence.py",
+      "import": "from scipy import ndimage"
+    },
+    {
+      "file": "src/fabric_inspection/product/evidence.py",
+      "import": "from PIL import Image"
+    },
+    {
+      "file": "src/fabric_inspection/product/service.py",
+      "import": "from pathlib import Path"
+    },
+    {
+      "file": "src/fabric_inspection/product/service.py",
+      "import": "import uuid, time, hashlib"
+    },
+    {
+      "file": "src/fabric_inspection/product/service.py",
+      "import": "from datetime import datetime, UTC"
+    },
+    {
+      "file": "src/fabric_inspection/product/service.py",
+      "import": "import numpy as np"
+    },
+    {
+      "file": "src/fabric_inspection/product/service.py",
+      "import": "import cv2"
+    },
+    {
+      "file": "src/fabric_inspection/product/service.py",
+      "import": "from PIL import Image"
+    },
+    {
+      "file": "src/fabric_inspection/product/service.py",
+      "import": "from ..vision.classical.engine import ClassicalInspectionEngine, PROJECT_ROOT"
+    },
+    {
+      "file": "src/fabric_inspection/product/service.py",
+      "import": "from ..vision.classical.preprocessing import load_grayscale"
+    },
+    {
+      "file": "src/fabric_inspection/product/service.py",
+      "import": "from .commissioning import ClassicalCommissioner, UNSUPPORTED"
+    },
+    {
+      "file": "src/fabric_inspection/product/service.py",
+      "import": "from .decision import decide"
+    },
+    {
+      "file": "src/fabric_inspection/product/service.py",
+      "import": "from .evidence import save_evidence"
+    },
+    {
+      "file": "src/fabric_inspection/product/__init__.py",
+      "import": "from .database import ProductDatabase"
+    },
+    {
+      "file": "src/fabric_inspection/product/__init__.py",
+      "import": "from .service import ProductService"
+    },
+    {
+      "file": "src/fabric_inspection/vision/classical/center_surround.py",
+      "import": "import numpy as np"
+    },
+    {
+      "file": "src/fabric_inspection/vision/classical/engine.py",
+      "import": "from __future__ import annotations"
+    },
+    {
+      "file": "src/fabric_inspection/vision/classical/engine.py",
+      "import": "from pathlib import Path"
+    },
+    {
+      "file": "src/fabric_inspection/vision/classical/engine.py",
+      "import": "import hashlib"
+    },
+    {
+      "file": "src/fabric_inspection/vision/classical/engine.py",
+      "import": "import joblib"
+    },
+    {
+      "file": "src/fabric_inspection/vision/classical/engine.py",
+      "import": "import numpy as np"
+    },
+    {
+      "file": "src/fabric_inspection/vision/classical/engine.py",
+      "import": "import yaml"
+    },
+    {
+      "file": "src/fabric_inspection/vision/classical/engine.py",
+      "import": "from .preprocessing import load_grayscale"
+    },
+    {
+      "file": "src/fabric_inspection/vision/classical/engine.py",
+      "import": "from .gabor import GaborFilterBank"
+    },
+    {
+      "file": "src/fabric_inspection/vision/classical/engine.py",
+      "import": "from .texture_features import gabor_dense_features"
+    },
+    {
+      "file": "src/fabric_inspection/vision/classical/engine.py",
+      "import": "from .center_surround import contrast_grid, normalized_parent_window"
+    },
+    {
+      "file": "src/fabric_inspection/vision/classical/engine.py",
+      "import": "from .scoring import grid_to_anomaly_map, image_anomaly_score"
+    },
+    {
+      "file": "src/fabric_inspection/vision/classical/gabor.py",
+      "import": "from __future__ import annotations"
+    },
+    {
+      "file": "src/fabric_inspection/vision/classical/gabor.py",
+      "import": "import math"
+    },
+    {
+      "file": "src/fabric_inspection/vision/classical/gabor.py",
+      "import": "from dataclasses import dataclass"
+    },
+    {
+      "file": "src/fabric_inspection/vision/classical/gabor.py",
+      "import": "import cv2"
+    },
+    {
+      "file": "src/fabric_inspection/vision/classical/gabor.py",
+      "import": "import numpy as np"
+    },
+    {
+      "file": "src/fabric_inspection/vision/classical/normal_model.py",
+      "import": "from dataclasses import dataclass"
+    },
+    {
+      "file": "src/fabric_inspection/vision/classical/normal_model.py",
+      "import": "import numpy as np"
+    },
+    {
+      "file": "src/fabric_inspection/vision/classical/normal_model.py",
+      "import": "from sklearn.decomposition import PCA"
+    },
+    {
+      "file": "src/fabric_inspection/vision/classical/preprocessing.py",
+      "import": "from __future__ import annotations"
+    },
+    {
+      "file": "src/fabric_inspection/vision/classical/preprocessing.py",
+      "import": "from pathlib import Path"
+    },
+    {
+      "file": "src/fabric_inspection/vision/classical/preprocessing.py",
+      "import": "import numpy as np"
+    },
+    {
+      "file": "src/fabric_inspection/vision/classical/preprocessing.py",
+      "import": "from PIL import Image"
+    },
+    {
+      "file": "src/fabric_inspection/vision/classical/scoring.py",
+      "import": "from __future__ import annotations"
+    },
+    {
+      "file": "src/fabric_inspection/vision/classical/scoring.py",
+      "import": "import cv2"
+    },
+    {
+      "file": "src/fabric_inspection/vision/classical/scoring.py",
+      "import": "import numpy as np"
+    },
+    {
+      "file": "src/fabric_inspection/vision/classical/texture_features.py",
+      "import": "from __future__ import annotations"
+    },
+    {
+      "file": "src/fabric_inspection/vision/classical/texture_features.py",
+      "import": "import cv2"
+    },
+    {
+      "file": "src/fabric_inspection/vision/classical/texture_features.py",
+      "import": "import numpy as np"
+    },
+    {
+      "file": "src/fabric_inspection/vision/classical/texture_features.py",
+      "import": "from .gabor import GaborFilterBank"
+    },
+    {
+      "file": "src/fabric_inspection/vision/classical/__init__.py",
+      "import": "from .engine import ClassicalInspectionEngine"
+    },
+    {
+      "file": "scripts/commission_and_inspect.py",
+      "import": "import argparse, json"
+    },
+    {
+      "file": "scripts/commission_and_inspect.py",
+      "import": "from pathlib import Path"
+    },
+    {
+      "file": "scripts/commission_and_inspect.py",
+      "import": "import httpx"
+    },
+    {
+      "file": "scripts/verify_frozen_benchmark.py",
+      "import": "from pathlib import Path"
+    },
+    {
+      "file": "scripts/verify_frozen_benchmark.py",
+      "import": "import argparse, hashlib, json, sys, time"
+    },
+    {
+      "file": "scripts/verify_frozen_benchmark.py",
+      "import": "from functools import lru_cache"
+    },
+    {
+      "file": "scripts/verify_frozen_benchmark.py",
+      "import": "import numpy as np"
+    },
+    {
+      "file": "scripts/verify_frozen_benchmark.py",
+      "import": "import cv2"
+    },
+    {
+      "file": "scripts/verify_frozen_benchmark.py",
+      "import": "from PIL import Image"
+    },
+    {
+      "file": "scripts/verify_frozen_benchmark.py",
+      "import": "from threadpoolctl import threadpool_limits"
+    },
+    {
+      "file": "scripts/verify_frozen_benchmark.py",
+      "import": "from fabric_inspection.vision.classical.engine import ClassicalInspectionEngine"
+    },
+    {
+      "file": "scripts/verify_frozen_benchmark.py",
+      "import": "from fabric_inspection.vision.classical.preprocessing import load_grayscale"
+    },
+    {
+      "file": "scripts/verify_frozen_benchmark.py",
+      "import": "from fabric_inspection.evaluation.metrics import BinaryHistogram, PerRegionOverlapHistogram, image_metrics"
+    },
+    {
+      "file": "tests/test_api.py",
+      "import": "from pathlib import Path"
+    },
+    {
+      "file": "tests/test_api.py",
+      "import": "import hashlib, sys"
+    },
+    {
+      "file": "tests/test_api.py",
+      "import": "import pytest"
+    },
+    {
+      "file": "tests/test_api.py",
+      "import": "import numpy as np"
+    },
+    {
+      "file": "tests/test_api.py",
+      "import": "from fastapi.testclient import TestClient"
+    },
+    {
+      "file": "tests/test_api.py",
+      "import": "from fabric_inspection.product.api import create_app"
+    },
+    {
+      "file": "tests/test_golden_solution1.py",
+      "import": "from pathlib import Path"
+    },
+    {
+      "file": "tests/test_golden_solution1.py",
+      "import": "import hashlib, json"
+    },
+    {
+      "file": "tests/test_golden_solution1.py",
+      "import": "import cv2, numpy as np, pytest"
+    },
+    {
+      "file": "tests/test_golden_solution1.py",
+      "import": "from threadpoolctl import threadpool_limits"
+    },
+    {
+      "file": "tests/test_golden_solution1.py",
+      "import": "from fabric_inspection.vision.classical.engine import ClassicalInspectionEngine, PROJECT_ROOT"
+    },
+    {
+      "file": "tests/test_golden_solution1.py",
+      "import": "from fabric_inspection.vision.classical.preprocessing import load_grayscale"
+    },
+    {
+      "file": "tests/test_imports.py",
+      "import": "import ast, sys"
+    },
+    {
+      "file": "tests/test_imports.py",
+      "import": "from pathlib import Path"
+    },
+    {
+      "file": "tests/test_imports.py",
+      "import": "from fabric_inspection.vision.classical.engine import PROJECT_ROOT, ClassicalInspectionEngine"
+    },
+    {
+      "file": "tests/test_product.py",
+      "import": "from pathlib import Path"
+    },
+    {
+      "file": "tests/test_product.py",
+      "import": "import hashlib"
+    },
+    {
+      "file": "tests/test_product.py",
+      "import": "import numpy as np"
+    },
+    {
+      "file": "tests/test_product.py",
+      "import": "import pytest"
+    },
+    {
+      "file": "tests/test_product.py",
+      "import": "from PIL import Image"
+    },
+    {
+      "file": "tests/test_product.py",
+      "import": "from fabric_inspection.vision.classical.engine import ClassicalInspectionEngine"
+    },
+    {
+      "file": "tests/test_product.py",
+      "import": "from fabric_inspection.product.commissioning import ClassicalCommissioner, UNSUPPORTED"
+    },
+    {
+      "file": "tests/test_product.py",
+      "import": "from fabric_inspection.product.database import ProductDatabase"
+    },
+    {
+      "file": "tests/test_product.py",
+      "import": "from fabric_inspection.product.service import ProductService"
+    },
+    {
+      "file": "tests/test_product.py",
+      "import": "from fabric_inspection.product.decision import decide"
+    },
+    {
+      "file": "tests/test_vision.py",
+      "import": "import numpy as np"
+    },
+    {
+      "file": "tests/test_vision.py",
+      "import": "import pytest"
+    },
+    {
+      "file": "tests/test_vision.py",
+      "import": "from fabric_inspection.vision.classical.engine import ClassicalInspectionEngine"
+    },
+    {
+      "file": "tests/test_vision.py",
+      "import": "from fabric_inspection.vision.classical.center_surround import normalized_parent_window"
+    },
+    {
+      "file": "tests/test_vision.py",
+      "import": "from fabric_inspection.vision.classical.texture_features import gabor_dense_features"
+    },
+    {
+      "file": "tests/test_vision.py",
+      "import": "from fabric_inspection.vision.classical.center_surround import contrast_grid"
+    },
+    {
+      "file": "tests/test_vision.py",
+      "import": "from fabric_inspection.vision.classical.scoring import grid_to_anomaly_map"
+    }
+  ],
+  "registered_active_dependencies": [],
+  "runtime_violations": []
+}

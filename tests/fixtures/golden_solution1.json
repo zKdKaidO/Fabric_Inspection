@@ -1,0 +1,23 @@
+{
+  "record": {
+    "index": 0,
+    "path": "A:\\RAW_FABRID\\MVTec\\test\\defect\\Rollo1A_0000001_D_07-05-2024_10-30-55.085_0_1.png",
+    "parent": "Rollo1A_0000001_D_07-05-2024_10-30-55.085.png",
+    "roll": "Rollo1A",
+    "label": 1,
+    "defect_area": 1141,
+    "quartile": 2,
+    "row_offset": 26,
+    "col_offset": 228,
+    "native_q999": 3.740664482116699,
+    "image_threshold": 9.078299560546876,
+    "reviewed": false,
+    "original315": true,
+    "primary_missed": true
+  },
+  "image_score": 3.740664482116699,
+  "native_map_sha256": "40d2fbac485accb0833910f8fe917992798d1b450e39f6bd6d131149be302c7d",
+  "parent_sha256": "55be4bd11719faa84caa9d7850e730bca7ea87a6f153e8e89ed2970c1f2e28be",
+  "map_absolute_tolerance": 1e-05,
+  "score_absolute_tolerance": 1e-06
+}

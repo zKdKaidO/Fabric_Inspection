@@ -1,0 +1,59 @@
+A:\RAW_FABRID\fabric_inspection
+|-- README.md
+|-- pyproject.toml
+|-- requirements-lock.txt
+|-- configs/
+|   `-- classical_solution1.yaml
+|-- models/
+|   `-- classical_solution1.joblib
+|-- src/fabric_inspection/
+|   |-- vision/classical/
+|   |   |-- engine.py  [ClassicalInspectionEngine: one final inference entry point]
+|   |   |-- preprocessing.py
+|   |   |-- gabor.py
+|   |   |-- texture_features.py
+|   |   |-- center_surround.py
+|   |   |-- normal_model.py
+|   |   `-- scoring.py
+|   |-- product/  [API, commissioning, decisions, evidence, SQLite]
+|   |-- data/    [external RAW-FABRID catalog]
+|   `-- evaluation/ [fixed benchmark metric utilities]
+|-- frontend/
+|   |-- src/  [five-page console]
+|   |-- public/
+|   |-- vite.config.ts
+|   |-- package.json
+|   |-- package-lock.json
+|   `-- dist/ [fresh post-archive production build]
+|-- tests/
+|   |-- test_vision.py
+|   |-- test_golden_solution1.py
+|   |-- test_api.py
+|   |-- test_product.py
+|   |-- test_imports.py
+|   `-- fixtures/ [frozen metrics, manifests and golden references]
+|-- scripts/
+|   |-- start_product.ps1
+|   |-- commission_and_inspect.py
+|   `-- verify_frozen_benchmark.py
+|-- docs/
+|   |-- FINAL_PIPELINE.md
+|   |-- FINAL_METRICS.md
+|   |-- FINAL_PROJECT_REPORT.md
+|   |-- PRODUCT_ARCHITECTURE.md
+|   |-- DEMO_SCRIPT.md
+|   |-- TEACHER_QA.md
+|   |-- FINAL_MODEL_PROVENANCE.md
+|   |-- FINAL_CHECKLIST.md
+|   |-- CLEANUP_MANIFEST.md
+|   |-- CLEANUP_INVENTORY.csv
+|   `-- verification/
+|-- inspection_store/ [operational metadata, uploads, evidence, history and logs]
+`-- experiments/ [empty legacy directory tree; 0 files; no deletion attempted]
+
+Generated installed dependencies (.venv and frontend/node_modules) and empty
+legacy containers are omitted from the important-file tree.
+
+External dataset: A:\RAW_FABRID\images and A:\RAW_FABRID\MVTec
+Quarantine: A:\RAW_FABRID\_archive\fabric_inspection_research_20261106
+Original backup: A:\RAW_FABRID\archive\pre_finalization_20261106

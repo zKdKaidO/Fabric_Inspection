@@ -1,0 +1,169 @@
+{
+  "scopes": {
+    "all": {
+      "pixel_auroc": 0.9032870546904782,
+      "pixel_auprc": 0.3396318221514683,
+      "image_auroc": 0.8465469901745992,
+      "image_auprc": 0.648074615963745,
+      "n_images": 5656,
+      "n_defect": 687,
+      "defect_pixels": 2042083,
+      "normal_pixels": 368629533,
+      "aupro_0.30": 0.7646351731885986
+    },
+    "Rollo1A": {
+      "pixel_auroc": 0.9241609098528913,
+      "pixel_auprc": 0.2319755816880641,
+      "image_auroc": 0.831317228002116,
+      "image_auprc": 0.5634013428574817,
+      "n_images": 588,
+      "n_defect": 53,
+      "defect_pixels": 121273,
+      "normal_pixels": 38413895
+    },
+    "Rollo2A": {
+      "pixel_auroc": 0.901673881092454,
+      "pixel_auprc": 0.34700760605166037,
+      "image_auroc": 0.8592076069730586,
+      "image_auprc": 0.6901600518439877,
+      "n_images": 756,
+      "n_defect": 125,
+      "defect_pixels": 467661,
+      "normal_pixels": 49077555
+    },
+    "Rollo3A": {
+      "pixel_auroc": 0.8743547845258112,
+      "pixel_auprc": 0.35027508883854647,
+      "image_auroc": 0.8616811065511475,
+      "image_auprc": 0.753815371403459,
+      "n_images": 196,
+      "n_defect": 43,
+      "defect_pixels": 118717,
+      "normal_pixels": 12726339
+    },
+    "Rollo4A": {
+      "pixel_auroc": 0.8956373385198944,
+      "pixel_auprc": 0.33904165130613517,
+      "image_auroc": 0.8559697943257594,
+      "image_auprc": 0.6851765180966566,
+      "n_images": 2184,
+      "n_defect": 269,
+      "defect_pixels": 749057,
+      "normal_pixels": 142381567
+    },
+    "Rollo5A": {
+      "pixel_auroc": 0.8797185575390752,
+      "pixel_auprc": 0.2604134684329843,
+      "image_auroc": 0.9067896389324961,
+      "image_auprc": 0.805436450714214,
+      "n_images": 420,
+      "n_defect": 56,
+      "defect_pixels": 138529,
+      "normal_pixels": 27386591
+    },
+    "Rollo6A": {
+      "pixel_auroc": 0.8931896600260174,
+      "pixel_auprc": 0.2584565872863375,
+      "image_auroc": 0.8559531315678856,
+      "image_auprc": 0.5908483963595548,
+      "n_images": 784,
+      "n_defect": 52,
+      "defect_pixels": 111958,
+      "normal_pixels": 51268266
+    },
+    "Rollo7A": {
+      "pixel_auroc": 0.9372631053492915,
+      "pixel_auprc": 0.5042001671735102,
+      "image_auroc": 0.812171405461483,
+      "image_auprc": 0.6042586975560535,
+      "n_images": 728,
+      "n_defect": 89,
+      "defect_pixels": 334888,
+      "normal_pixels": 47375320
+    },
+    "Q1": {
+      "pixel_auroc": 0.9234141807525862,
+      "pixel_auprc": 0.16990443674315145,
+      "image_auroc": 0.7482285519055353,
+      "image_auprc": 0.3407914683385342,
+      "n_images": 5141,
+      "n_defect": 172,
+      "defect_pixels": 75057,
+      "normal_pixels": 336845519
+    },
+    "Q2": {
+      "pixel_auroc": 0.896959946872962,
+      "pixel_auprc": 0.2368030587294046,
+      "image_auroc": 0.8591160544211319,
+      "image_auprc": 0.5617033393431836,
+      "n_images": 5141,
+      "n_defect": 172,
+      "defect_pixels": 286850,
+      "normal_pixels": 336633726
+    },
+    "Q3": {
+      "pixel_auroc": 0.8955278814162011,
+      "pixel_auprc": 0.18004117734693859,
+      "image_auroc": 0.8591760140944028,
+      "image_auprc": 0.33998316847685583,
+      "n_images": 5140,
+      "n_defect": 171,
+      "defect_pixels": 622453,
+      "normal_pixels": 336232587
+    },
+    "Q4": {
+      "pixel_auroc": 0.9095278788604536,
+      "pixel_auprc": 0.32556404458344446,
+      "image_auroc": 0.9197407648350002,
+      "image_auprc": 0.636979196398402,
+      "n_images": 5141,
+      "n_defect": 172,
+      "defect_pixels": 1057723,
+      "normal_pixels": 335862853
+    },
+    "low_contrast": {
+      "pixel_auroc": 0.8868230757062017,
+      "pixel_auprc": 0.3183644857161941,
+      "image_auroc": 0.8485948190352888,
+      "image_auprc": 0.6409612302529388,
+      "n_images": 5306,
+      "n_defect": 337,
+      "defect_pixels": 1085261,
+      "normal_pixels": 346648755
+    },
+    "thin": {
+      "pixel_auroc": 0.8565350525277304,
+      "pixel_auprc": 0.013405866053358407,
+      "image_auroc": 0.7040480245816747,
+      "image_auprc": 0.0749347602159323,
+      "n_images": 5010,
+      "n_defect": 41,
+      "defect_pixels": 54746,
+      "normal_pixels": 328280614
+    }
+  },
+  "normal_only_operating_point": {
+    "image_recall": 0.34934497816593885,
+    "image_precision": 0.9022556390977443,
+    "normal_image_fpr": 0.0052324411350372305,
+    "reviewed_images": 266,
+    "true_positive_images": 240,
+    "false_positive_images": 26,
+    "pixel_recall": 0.32021617142887926,
+    "pixel_precision": 0.47715778267002235,
+    "normal_pixel_fpr_mean": 0.0014656575111393767,
+    "normal_pixel_fpr_p95_image": 0.005838012695312492,
+    "normal_border_pixel_fpr": 0.0035199486818273296,
+    "normal_interior_pixel_fpr": 0.0008367928670512278
+  },
+  "score_zero_fraction": 0.05054391593879149,
+  "score_clip_fraction": 8.233703008972773e-06,
+  "pixel_bins": 4096,
+  "pro_bins": 256,
+  "pro_max_fpr": 0.3,
+  "score_range": [
+    0.0,
+    25.0
+  ],
+  "maps": "A:\\RAW_FABRID\\fabric_inspection\\experiments\\solution1_center_surround\\maps\\solution1.float16.npy"
+}

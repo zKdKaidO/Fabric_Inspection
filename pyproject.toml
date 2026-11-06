@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "raw-fabrid-inspection"
+version = "0.1.0"
+description = "Frozen Solution 1 textile anomaly inspection product"
+requires-python = ">=3.11"
+dependencies = [
+  "numpy>=1.26",
+  "opencv-python-headless>=4.9",
+  "pandas>=2.2",
+  "Pillow>=10",
+  "PyYAML>=6",
+  "scikit-learn>=1.4",
+  "scipy>=1.12",
+  "joblib>=1.4",
+  "threadpoolctl>=3",
+  "fastapi>=0.115",
+  "uvicorn[standard]>=0.34",
+  "python-multipart>=0.0.20",
+  "httpx>=0.28",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.scripts]
+fabric-inspection-api = "fabric_inspection.product.api:run"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "strategy": "Archived outside the active project; no deletions, copies, overwrites or recompression",
+  "registered_targets": 6586,
+  "archived": 6586,
+  "unresolved": 0,
+  "deletions": 0,
+  "copies": 0,
+  "overwrites": 0,
+  "archive": "A:\\RAW_FABRID\\_archive\\fabric_inspection_research_20261106",
+  "manifest": "cleanup_archive_manifest.json",
+  "SHA256_verified": true,
+  "empty_directories_retained": true
+}
